@@ -1,0 +1,60 @@
+aside {
+    float: none;
+    display: table-cell;
+}
+
+main {
+    float: none;
+    display: table-cell;
+    border-right: 1px solid #333;
+}
+
+main h2 {
+    font: italic bold 26pt/28pt Arvo;
+    margin-top: 0;
+}
+
+main div {
+  font: 10pt/15pt;
+}
+
+aside div {
+    font-size:  12pt/15pt;
+}
+
+aside h3 {
+    margin-top: 0;
+    font-size:   italic 16pt/18pt Arvo;
+}
+
+.photo {
+   height: 100px;
+   background: black;
+   color: white;
+   text-align: center;
+   line-height: 100px;
+   margin-bottom: 5px;
+}
+
+main .photo {
+    height: 300px;
+    line-height: 300px;
+}
+
+:host >>> .photo {
+    height: 100px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 975px) {
+    main {
+        display: block;
+    }
+    aside {
+        display: block;
+    }
+}

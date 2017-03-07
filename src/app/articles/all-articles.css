@@ -1,0 +1,143 @@
+.aside h3 { font: italic bold 19pt/20pt Arvo; }
+
+.aside article:first-child { border-bottom: 1px solid #333333; padding-bottom: 10px; }
+
+main h3 { font: italic bold 16pt/20pt Arvo }
+
+main .col-md-12:first-child h3 { font: italic 16pt/20pt Arvo; }
+
+.opinion h3 { font: italic bold 12pt/15pt Arvo }
+
+.opinion .col-md-6:first-child h3 { font: italic 12pt/15pt Arvo; }
+
+.travel h3 { font: bold 12pt/15pt Arvo; }
+
+.travel .col-md-6:first-child h3 { font: italic bold 12pt/15pt Arvo; }
+
+h3 {
+    margin-top: 0;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+.col-xs-30,
+.col-sm-30,
+.col-md-30,
+.col-lg-30 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.col-xs-30 {
+    width: 40%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-30 {
+        width: 40%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-30 {
+        width: 40%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-30 {
+        width: 40%;
+        float: left;
+    }
+}
+.videoPlaceHolder {
+    background: black;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+.main-image {
+    float: right;
+    text-align: center;
+    color: white;
+    background: black;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+.photo {
+   height: 100px;
+   background: black;
+   color: white;
+   text-align: center;
+   line-height: 100px;
+   margin-bottom: 5px;
+}
+
+.travel-label {
+    background: url('/app/assets/arrows.png');
+    background-repeat-y: no-repeat;
+    background-position: right;
+}
+
+.travel-label strong {
+    background: white;
+}
+
+.opinion-label {
+    text-align: center;
+    font-size: 18px;
+}
+
+.opinion-container {
+    text-align: center;
+}
+
+.loading {
+    width: 100%;
+    height: 500px;
+    background-image: url('/app/assets/default.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
