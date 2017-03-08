@@ -176,6 +176,11 @@ li > a.active-link {
     text-decoration: underline;
 }
 
+.cogs {
+    float: right;
+    font-size: 18px;
+}
+
 @media (max-width: 750px) {
     md-sidenav {
         width: 50%;
@@ -183,4 +188,3 @@ li > a.active-link {
     .header-above {
         text-align: center;
     }
-}

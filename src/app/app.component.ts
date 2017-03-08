@@ -27,12 +27,15 @@ import {RouterModule} from '@angular/router';
           
     <div class="overlay" [ngClass]="{ 'show-overlay' : showOverlay, 'hide-overlay' : !showOverlay }">
       <a class="closebtn" (click)="closeNav()">&times;</a>
-      <div class="overlay-content"><input type="search" placeholder="{{placeholder}}" (keyup.enter)="search()" (keyup.esc)="esc()" [(ngModel)]="searchValue"></div>
+      <div class="overlay-content">
+      <input type="search" placeholder="{{placeholder}}" (keyup.enter)="search()" (keyup.esc)="esc()" [(ngModel)]="searchValue">
+      </div>
     </div>
 
       <div class="header-above">
         <a (click)="start.toggle()"><fa [name]="'bars'"></fa>SECTIONS</a>
         <a (click)="closeNav()"><fa [name]="'search'"></fa>SEARCH</a>
+        <a class="cogs" [routerLink]="['/login']"><fa [name]="'cogs'"></fa></a>
       </div>
       <header>
         <div class="header-section">

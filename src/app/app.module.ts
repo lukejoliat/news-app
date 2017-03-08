@@ -15,6 +15,7 @@ import { TravelArticlesComponent } from './articles/travel-articles.component'
 import { VideoArticlesComponent } from './articles/video-articles.component'
 import { SearchComponent } from './search/search.component';
 import { CategoryComponent } from './articles/category.component';
+import { LoginComponent } from './login/login.component';
 
 import { ArticleFilterPipe } from './articles/article-filter.pipe';
 import { SortPipe } from './order-by.filter';
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
   { path: 'fashion',  component: FashionArticlesComponent },
   { path: 'travel',  component: TravelArticlesComponent },
   { path: 'video',  component: VideoArticlesComponent },
+  { path: 'login',  component: LoginComponent },
   { path: 'search/:id',  component: SearchComponent },
   { path: 'category/:id',  component: CategoryComponent },
   { path: '',  component: AllArticlesComponent },
@@ -44,7 +46,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports:      [ BrowserModule, HttpModule, RouterModule.forRoot(appRoutes), FormsModule, MdSidenavModule, MdButtonModule, MdCardModule, Angular2FontawesomeModule ],
   declarations: [ 
-    AppComponent, NavigationComponent, AllArticlesComponent, SportsArticlesComponent, ArticleFilterPipe, OpinionArticlesComponent, SortPipe, ColumnFilter, WorldArticlesComponent, BusinessArticlesComponent, FashionArticlesComponent, TravelArticlesComponent, VideoArticlesComponent, SearchComponent, CategoryComponent
+    AppComponent, NavigationComponent, AllArticlesComponent, SportsArticlesComponent, ArticleFilterPipe, OpinionArticlesComponent, SortPipe, ColumnFilter, WorldArticlesComponent, BusinessArticlesComponent, FashionArticlesComponent, TravelArticlesComponent, VideoArticlesComponent, SearchComponent, CategoryComponent, LoginComponent
   ],
   bootstrap:    [ AppComponent ],
   providers: [MdIconRegistry]
