@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
                 </div>
                 <button type="submit">Save</button>   
             </fieldset>
-        </form>
+        </form> 
     `
 })
 
